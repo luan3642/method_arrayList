@@ -23,5 +23,7 @@ public class Teste {
            staticStack.pop();
            System.out.println("");
            staticStack.listar();
+           
+           System.out.println("Tamanho: "+staticStack.getSize());
     }
 }

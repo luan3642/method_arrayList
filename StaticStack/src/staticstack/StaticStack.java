@@ -42,6 +42,21 @@ public class StaticStack {
             System.out.println(element);
         }
     }
+    
+    public  int getSize (){
+        return this.elements.length;
+    }
+    
+    public boolean isEmpty(){
+        
+        boolean vazio = false;
+        for (int i = 0; i <elements.length; i++) {
+            if(elements[i] == 0){
+                vazio = true;
+            }
+        }
+        return vazio;
+    }
    
    
    
