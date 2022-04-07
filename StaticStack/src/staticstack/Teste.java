@@ -13,17 +13,20 @@ import java.util.Scanner;
 public class Teste {
     public static void main(String[] args) {
        
-           int[] valor = {5,6,2,3,10,20};
+           int[] valor = {5,2,1,5,6,7};
         
            StaticStack staticStack = new StaticStack(valor.length);
            
            staticStack.push(valor);
            staticStack.listar();
            System.out.println("");
-           staticStack.pop();
+//           staticStack.pop();
            System.out.println("");
            staticStack.listar();
            
            System.out.println("Tamanho: "+staticStack.getSize());
+           System.out.println("Está vazia: "+staticStack.isEmpty());
+           System.out.println("Está cheio: "+staticStack.isFull());
+           
     }
 }
